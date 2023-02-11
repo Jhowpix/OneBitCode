@@ -1,0 +1,43 @@
+​*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/*
+
+Fontes utilizadas:
+1. Elemento H1 = Montserrat
+2. Elementos com a classe date = Roboto
+3. Elementos com a classe post-content = Open Sans
+
+Cores:
+1. Background dos posts = #fffafa
+2. Cor da data = #008080
+
+*/
+
+body{
+  background: white;
+  margin: 0;
+  padding: 0;
+}
+
+.post-container{
+  margin: 0 15% 0 15%;
+  padding: 0 20px 0 20px;
+}
+
+.date{
+  font-family: Roboto;
+  color: #008080;
+}
+
+h1{
+  font-family: Montserrat;
+}
+
+.post{
+  padding: 40px;
+  font-family: Open Sans;
+  background-color: #fffafa;
+}
