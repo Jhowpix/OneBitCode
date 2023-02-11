@@ -13,6 +13,7 @@ body{
 
 h2{
   background-color: #f1c40f;
+  border: 2px solid black;
   color: black;
 }
 h3{
