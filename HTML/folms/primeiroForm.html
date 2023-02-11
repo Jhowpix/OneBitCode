@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiro Form</title>
+</head>
+
+<body>
+
+  <h3>Cadastro da liga dos astronaltas</h3>
+
+  <form action=" ">
+
+    Nome: <input type="text" id="name" name="name">
+      <br><br>
+    
+      <label for="email">Email: </label>
+    <input type="email" name="email" id="email"> 
+    <label for="password">- Passaword:</label>
+    <input type="password" name="password" id="password">
+      <br><br>
+     
+    <label for="birtday">Data de nascimento:</label>
+    <input type="date" name="birtday" id="birtday">
+     
+    <label for="photo"> - Foto:</label>
+    <input type="file" name="photo" id="photo" placeholder=" Escolher arquivo"> 
+      <br><br>
+    
+      <label for="nationality"> Nacionalidade: </label>
+      <select name="nationality" id="nationality"> 
+      <option value="Basileiro">Brasileiro</option>
+      <option value="Russo">Russo</option>
+      <option value="Americano">Americano</option>
+
+    - Genero: 
+    <label for="female"><b> F </b></label>
+    <input type="radio" name="female" id="female"> 
+    <label for="male"><b> M </b></label> 
+    <input type="radio" name="male" id="male">
+    
+    <p>Suas principais qualidades:</p>
+
+    <label for="inteligencia">Inteligencia</label>
+    <input type="checkbox" name="inteligencia" id="inteligencia"> 
+    <label for="resiliencia">|Resiliência </label>
+    <input type="checkbox" name="resiliencia" id="resiliencia"> 
+    <label for="preparoFisico">|Preparo físico </label>
+    <input type="checkbox" name="preparoFisico" id="preparoFisico"> 
+    <label for="educacao">|Educação </label>
+    <input type="checkbox" name="educacao" id="educacao">
+      <br><br>
+    
+    <textarea name="description" id="description" cols="30" rows="10" placeholder="Por que você gostaria de ser um astro nauta?"></textarea>
+      <br><br>
+      
+    <input type="button" value="Criar">
+    
+  </form>
+</body>
+</html>
