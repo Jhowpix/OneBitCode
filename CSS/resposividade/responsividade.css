@@ -1,15 +1,26 @@
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
+body{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  background-color: antiquewhite;
+  max-width: 780px;
+  height: auto;
+}
 .text-content {
   font-size: 22px;
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* o uso do px nao deixa totalmente resposivo */
+.img-content{
+  width: 100%;
+  height:auto;
+  margin: 10px;
+}
+/*
+    AULA COMENTADA PARA CONTINUACAO DA PROXIMA AULA.
+
+-- o uso do px nao deixa totalmente resposivo --
 @media ( max-width: 795px ) {
   .img-content{
     width: 400px;
@@ -19,7 +30,7 @@
   }
 }
 
-/* o uso de porcentagem seria mais adequado porem nao obrigatorio. */
+-- o uso de porcentagem seria mais adequado porem nao obrigatorio. --
 @media ( max-width: 510px ) {
   .img-content{
     width: 100%;
@@ -36,3 +47,59 @@
   text-align: center;
 }
 }
+*/
+
+
+@media ( max-width: 790px ){
+
+  .img-content{
+    width: 100%;
+    height:auto;
+    margin: 10px;
+  }
+  .text-content{
+  font-size: 20px;
+  margin-bottom: 10px;
+  }
+  h1{
+    margin: 15px 0 15px 30px;
+  }
+  body{
+    margin: auto;
+  }
+}
+
+@media ( max-width: 425px ){
+
+  .img-content{
+    width: 100%;
+    height:auto;
+    margin: 10px;
+  }
+  .text-content{
+  font-size: 20px;
+  margin-bottom: 10px;
+  }
+  h1{
+    margin: 15px 0 15px 30px;
+  }
+}
+
+@media ( max-width: 320px ){
+
+  .img-content{
+    width: 100%;
+    height:auto;
+    margin: 10px;
+  }
+  .text-content{
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 10px;
+  }
+  h1{
+    text-align: center;
+    margin: 15px;
+  }
+}
+
