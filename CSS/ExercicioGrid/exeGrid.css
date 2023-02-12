@@ -1,0 +1,113 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+header{
+  width: 100vw;
+  height: 60px;
+  background: white;
+  border: 1px solid black;
+  box-shadow:  0 0 10px rgba(0, 0, 0, 0.400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container{
+  flex: 1 0 auto;  /* esta parte foi a mais importante fixar estudo */
+  padding: 20px;
+  background-color: darkgrey;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: auto auto auto ;
+  grid-template-areas:  "item1 item2 item3"
+                        "item4 item4 item4"
+                        "item5 item5 item6";
+  gap:10px;
+}
+
+.item{
+  background: white;
+  border: 1px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.400);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.400);
+}
+
+footer{
+  width: 100vw;
+  height: 60px;
+  background: white;
+  border: 1px solid black;
+  box-shadow:  0 0 10px rgba(0, 0, 0, 0.400);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.item1{
+  grid-area: item1;
+  min-width: 250px;
+}
+
+.item2{
+  grid-area: item2;
+  min-width: 250px;
+}
+
+.item3{
+  grid-area: item3;
+  min-width: 250px;
+}
+
+.item4{
+  grid-area: item4;
+  min-width: 250px;
+}
+
+.item5{
+  grid-area: item5;
+  min-width: 350px;
+}
+
+.item6{
+  grid-area: item6;
+  min-width: 250px;
+}
+
+@media ( max-width: 780px ){
+  .container{
+    grid-template-areas:  "item1 item1 item1"
+                          "item2 item2 item2"
+                          "item3 item3 item3"
+                          "item4 item4 item4"
+                          "item5 item5 item6";
+  }
+}
+
+@media ( max-width: 630px ){
+  .container{
+    grid-template-areas:  "item1 item1 item1"
+                          "item2 item2 item2"
+                          "item3 item3 item3"
+                          "item4 item4 item4"
+                          "item5 item5 item5"
+                          "item6 item6 item6";;
+  }
+}
+
+@media ( max-width: 350px ){
+  .item5{
+  min-width: 205px;
+  }
+}
