@@ -53,7 +53,7 @@ if ( x > y ) {
   
 */
 
-
+/*
 const atacante = prompt("qual e o nome do personagem atacante?");
 const poderDeAtaque = prompt("qual valor de ataque?");
 
@@ -79,4 +79,71 @@ alert(
   "\npoder de defesa: " + poderDeDefesa + "\npossui escudo: " + possuiEscudo
   );
 
+  */
+
   // nao funciona o codigo acima ainda buscando solucao 
+
+  //refazendo os exercicios para fixar conheciment.
+
+
+/*
+  const primeiroNome = prompt("Escreva seu nome.");
+  const sobreNome = prompt("Escreva se sobre nome.");
+  const anoDeNascimento = prompt("Ano de nascimento.");
+  const cursoDeCarreira = prompt("Escreva aqui a area que quer seguir.");
+
+ //  anoDeNascimento = anoDeNascimento - 2023; ERROUUUU!!!!!!!
+
+  alert(
+    "Nome completo: " + primeiroNome + " " + sobreNome + 
+    "\nIdade: " + (2023 - anoDeNascimento) +  // esqueci de efetuar o calculo nesta area...
+    "\nCarreira a seguir: "  +  cursoDeCarreira
+  )
+*/
+
+
+//refando exercicio 02 
+
+
+
+/*
+
+//Desta vez deu certo
+
+const car1 = prompt("informe o nome do carro 1 .");
+const car2 = prompt("informe o nome do carro 2 .");
+
+const vel1 = prompt("qual a velocidade do carro 1 ?");
+const vel2 = prompt("qual a velocidade do carro 2 ?");
+
+if( vel1 > vel2 ){
+  alert("A velocidade do: " + car1 + " " + "e maior que a do :" + car2)
+} 
+else if ( vel1 < vel2 ){
+  alert("A velocidade do: " + car2 + " " + "e maior que a do :" + car1)
+} 
+else if ( vel1 === vel2 ){
+  alert( "a velocidade de ambos os carros sao iguais.")
+}
+
+*/
+
+
+// deu super certooooooo!!!!!! 
+
+const persA = prompt("informe o nome do personagem de ataque.");
+const dano = prompt("quantos pontos de dano o personagem de ataque causa?.");
+const persD = prompt("informe o nome do personagem de defesa.");
+const vida = prompt("quantos pontos de vida o personagem de defesa tem?.");
+const escudo = prompt(" possui algum escudo(sim/nao)?.");
+let seSim = prompt("Se seu personagem possui escudo qual valor de defesa?");
+
+seSim += vida;
+
+if( vida + seSim <= dano){
+  alert("personagem: " + persA + " "+ "venceu")
+} else if( vida + seSim >= dano){
+  alert("personagem: " + persD + " "+ "sobrevivel")
+}
+
+// preciso ser mais criativo e atento com os nomes das variaveis.
