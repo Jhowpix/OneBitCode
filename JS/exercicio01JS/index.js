@@ -13,6 +13,10 @@ alert(
 );
 */
 
+
+// EXERCICIO CALCULADORA 
+
+
 /*
 const enter1 = prompt("informe o primeiro valor");
 const enter2 = prompt("informe o segundo valor");
@@ -35,6 +39,8 @@ alert(
 */
 
 
+// EXERCICIO VELOCIDADE CORRO
+
 /*
 const nomeCar1 = prompt("Carro 1:");
 const x = prompt("informe a velocidade do carro 1.");
@@ -52,6 +58,9 @@ if ( x > y ) {
     }
   
 */
+
+
+// EXERCICIO PERSONAGEM ATAQUE E DEFESA 
 
 /*
 const atacante = prompt("qual e o nome do personagem atacante?");
@@ -86,6 +95,8 @@ alert(
   //refazendo os exercicios para fixar conheciment.
 
 
+  //REFAZENDO EXERCICIO 01 RECRUTA
+
 /*
   const primeiroNome = prompt("Escreva seu nome.");
   const sobreNome = prompt("Escreva se sobre nome.");
@@ -102,7 +113,7 @@ alert(
 */
 
 
-//refando exercicio 02 
+//REFAZENDO EXERCICIO 02  VELOCIDADE CARRO
 
 
 
@@ -129,7 +140,10 @@ else if ( vel1 === vel2 ){
 */
 
 
-// deu super certooooooo!!!!!! 
+// SAIU CERTO DESTA VEZ. 
+
+
+/*
 
 const persA = prompt("informe o nome do personagem de ataque.");
 const dano = prompt("quantos pontos de dano o personagem de ataque causa?.");
@@ -146,4 +160,34 @@ if( vida + seSim <= dano){
   alert("personagem: " + persD + " "+ "sobrevivel")
 }
 
+*/
+
 // preciso ser mais criativo e atento com os nomes das variaveis.
+
+
+//REFAZENDO A CALCULADORA
+
+
+/*
+const val1 = prompt("digite o primeiro valor...");
+const val2 = prompt("digite o segundo valor...");
+
+//voltei a repetir aquele mesmo erro do float. vamos corregir 
+
+  const x = parseFloat (val1);
+  const y = parseFloat (val2);
+
+
+let soma = x + y;
+    subtracao = x - y;
+    multiplicacao = x * y;
+    divisao = x / y;
+
+    alert(
+      "Soma: " + soma +
+      "\nSubtracao: " + subtracao +
+      "\nMultiplicacao: " + multiplicacao +
+      "\nDivisa: " + divisao
+    )
+
+    */
