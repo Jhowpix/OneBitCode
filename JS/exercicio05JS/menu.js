@@ -8,7 +8,7 @@ do{
     "\n2. opcao dois" +
     "\n3. opcao tres" +
     "\n4. opcao quatro" +
-    "\n5. opcao cinco"
+    "\n5. sair"
   )
 
   switch (opcao){
