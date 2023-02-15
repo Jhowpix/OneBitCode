@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercicio 10</title>
+</head>
+<body>
+
+  <h1>45 - Exercício 9</h1>
+
+ <h2>Calculadora Geométrica</h2>
+
+Escreva um programa em javascript para calcular a área de diferentes formas geométricas. O programa deve iniciar com um menu contendo as diferentes opções de cálculas. As opções devem ser:
+
+<lu>
+  <li>área do triângulo: base * altura / 2</li>
+  <li>área do retângulo: base * altura</li>
+  <li>área do quadrado: lado²</li>
+  <li>área do trapézio: (base maior + base menor) * altura / 2</li>
+  <li>área do círculo: pi * raio² (considere pi = 3.14)</li>
+</lu>
+
+<p>Você deve escrever o programa usando funções sempre que possível para separar os procedimentos. O programa também deve ter uma opção de “Sair” e enquanto ela não for escolhida deverá voltar ao menu.</p>
+
+<script>
+
+executar()
+  
+  function triangulo(){
+    const base = prompt("informe a base do triangulo.")
+    const altura = prompt("informe a altura do triangulo.")
+    return base * altura /2
+  }
+  function retangulo(){
+    const base = prompt("informe a base do retangulo.")
+    const altura = prompt("informe a altura do retangulo.")
+    return base * altura 
+  }
+  function quadrado(){
+    const lado = prompt("informe o lado do quadrado.")
+    return lado * lado
+  }
+  function trapezio(){
+    const baseMaior = parseFloat(prompt("informe a base a base maior do trapezio."))
+    const baseMenor = parseFloat(prompt("informe a base a base menor do trapezio."))
+    const altura = prompt("informe a altura do triangulo.")
+    return baseMaior * baseMenor / 2
+  }
+  function circulo(){
+    const raio = prompt("informe o raio do circulo.")
+    return  3.14 * raio * raio
+  }
+
+  function exebirMenu(){
+    return prompt(
+      "Calcular Geometrica\n"+
+      "1. calcular area do triangulo\n " +
+      "2. calcular area do retangulo\n" +
+      "3. calcular area do quadrado\n" +
+      "4. calcular area do trapezio\n" +
+      "4. calcular area do circulo\n" +
+      "6. sair"
+    )
+  }
+
+function executar(){
+  let opcao = ""
+  do{
+    opcao= exebirMenu
+    let resultado
+
+    switch (opcao) {
+      case "1":
+          resultado = triangulo()
+        break;
+        case "2":
+          resultado = retangulo()
+        break;
+        case "3":
+          resultado = quadrado()
+        break;
+        case "4":
+          resultado = trapezio()
+        break;
+        case "5":
+          resultado = circulo()
+        break;
+        case "6":
+          alert("Encerrando...")
+        break;
+    
+    
+    }
+
+    if(resultado){
+      alert("Resultado: " + resultado)
+    }
+
+  } while (opcao !== "6")
+}
+
+
+</script>
+  
+</body>
+</html>
