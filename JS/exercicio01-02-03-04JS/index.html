@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercício 01 JavaScript</title>
+</head>
+<body>
+  <h1>Exercicio 01</h1>
+<h2>Ficha cadastral do serviço militar.</h2>
+<p>Exercicio recruta.</p>
+
+<script>
+  const nome = prompt('Nome.');
+  const sobrenome = prompt('Sobre nome.') ;
+  const dataNascimento = prompt('Ano de nascimento.');
+  const campoDeEstudo = prompt('Campo de estudo.');
+
+  alert(
+    "Nome Completo: " + nome +
+    "\nIdade: " + (2023 - dataNascimento) +
+    "\nArea de atuação: " + campoDeEstudo
+  )
+</script>
+<p>Repetindo o exercicio a cima como forma de praticar e fixar conhecimento.</p>
+
+<p>Preencha sues dados para ingressar no serviço militar.</p>
+  <br><br>
+  
+  <h2>Exercicio 02</h2>
+  <p> 'calculadora'</p>
+
+<script>
+    const value1 = prompt('digite o primeiro valor');
+    const value2 = prompt('digite o segundo valor');
+  
+      let x = parseFloat(value1);
+      let y = parseFloat(value2);
+  
+    alert(
+      'Soma: ' + ( x + y ) +
+      '\n Subtração: ' + ( x - y ) +
+      '\n multiplicação: ' + ( x * y ) +
+      '\n Divisao: ' + ( x / y )
+    )
+</script>
+<p>Repetindo o exercicio a cima como forma de praticar e fixar conhecimento.</p>
+
+
+  <h2>Exercicio 03 </h2>
+  <p>Terste de velocidade</p>
+  <script>
+
+    const car1 = prompt('Teste de volocidade infome o modelo do primeiro carro.');
+    const vel1 = prompt('informe a velocidade.');
+    const car2 = prompt('Informe o modelo do segundo carro.');
+    const vel2 = prompt('informe a velocidade');
+
+    if( vel1 > vel2 ){
+      alert( 
+        "carro: " + car1 + " " + " é o carro mais rapido."
+      )
+    } else if( vel2 > vel1 ){
+      alert(
+        "carro: " + car2 + " " + " é o carro mais rapido."
+      )
+    } else if( vel1 === vel2 ){
+      alert( 
+        "Ambos os carros: " + car1 + " " + " e " + " " + car2 + " " + "possui a mesma velocidade."
+      )
+    }
+
+  </script>
+<p>Obs: se colocarmos o carro1 com a velocidade de 120 e o carro dois com qualquer velocidade que nao possua 3 digitos e for maior que 12, ele alerta como o carro2 sendo o mais rapido, porque o JavaScript nao le o zero que esta a direita.<br>
+Exemplo: carro1 = velocidade 120<br>
+carro2 = velocidade 13 <br>
+isso resulta como o carro2 sendo o mais rapido</p>
+
+
+  <h2>Exercicio 04</h2>
+  <p>Calculo de dado de um personagem.</p>
+  <p>Refanzendo os exercicios propostos ate aqui.</p>
+  <p>obs: deu tudo certo</p>
+
+  <script src="index.js"></script>
+</body>
+</html>
