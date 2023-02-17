@@ -128,6 +128,8 @@ while(opcao === "1"){
 alert('nave: ' + nomeNave + "\nQuantidade de dobras: " + dobra );
 */
 
+
+/*
 alert('Seja bem vindo!')
 let nomeUsuario = prompt('Escreva seu nome.');
 let idadeUsuario = prompt( nomeUsuario + '' + ' qual sua idade?');
@@ -136,3 +138,21 @@ let confirma = confirm( 'Sua idade é : '+ idadeUsuario );
 
 alert( 'Nome: ' + nomeUsuario +
 '\nIdade: ' + idadeUsuario );
+*/
+
+/*
+let nomeNave = prompt('Digite o nome da nave.');
+let caracter = prompt('Qual caracter voce deseja subistituir?');
+let subistituir = prompt('Por qual voce deseja subistituir?');
+let novaNave ='';
+
+for(let pos = 0; pos < nomeNave.length; pos++ ){
+  if(nomeNave[pos] == caracter){
+    novaNave += subistituir
+  } else {
+    novaNave += nomeNave[pos]
+  }
+}
+
+console.log( 'o nome da nave agora e: ' + novaNave);
+*/
