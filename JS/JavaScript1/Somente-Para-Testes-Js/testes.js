@@ -176,3 +176,24 @@ alert(
 );
 
 */
+
+// vamos de turista 
+
+const nome = prompt('Qual seu nome turista?');
+
+let cidade = "";
+let contagem = 0;
+
+let pergunta = prompt('Visitou alguma cidade (sim / nao)');
+
+while ( pergunta === "sim"){
+  let qualCidade = prompt( 'qual cidade voce visitou?');
+
+  cidade += "-" + qualCidade + "\n"
+  contagem++
+  pergunta = prompt('Visitou alguma outra cidade? (sim / nao)');
+}
+
+alert(
+  nome + ' voce ja visitou ' + '\n ' + cidade
+)
