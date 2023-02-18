@@ -156,3 +156,23 @@ for(let pos = 0; pos < nomeNave.length; pos++ ){
 
 console.log( 'o nome da nave agora e: ' + novaNave);
 */
+
+
+//calculadora
+/*
+const value =parseFloat(prompt('Digite um valor a ser calculado.'));
+const secondValue = parseFloat( prompt('Digite o segundo valor a ser calculado'));
+
+let soma = value + secondValue;
+let subtracao = value - secondValue;
+let mult = value * secondValue;
+let divisao = value / secondValue;
+
+alert(
+  "soma: "  + value + " + " + secondValue + " = " + soma +
+  "\nSubtracao: " + value + " - " + secondValue + " = " + subtracao +
+  "\nMultiplicacao: " + value + " x " + secondValue + " = " + mult +
+  "\nDivisao: " + value + " / " + secondValue + " = " + divisao 
+);
+
+*/

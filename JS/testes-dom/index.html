@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+
+<body>
+
+  <h2>DOM ( DOCUMENT OBJECT  MODEL )</h2>
+
+  <h1>Criando Novos Elementos no DOM</h1>
+
+  <button onclick="addInput()">Adicionar Input</button>
+
+  <ul id="inputs"></ul>
+
+
+  <Script>
+
+// Criando uma function
+    function addInput() {
+//nome da funcao = addInput(), dada junto oa button onclick='addInput()'
+            
+  const ul = document.getElementById('inputs')
+// variavel ul pegando o elemento por Id, elemento = inputs
+
+  const newLi = document.createElement('li')
+// variavel newLi criando uma lista = li, usando o .createElement()
+
+  newLi.className = 'list-item'
+// variavel newLi recebendo um nome = list-item, usando .className=''
+
+  newLi.innerText = 'Novo input: '
+// variavel newLi escrevendo na tela = novo input, usando . innerHTML=''
+
+  const newInput = document.createElement('input')
+//criando uma variavel newInput e criando outro elemento = input, usando .createElement()
+
+  newInput.type = 'text'
+// variavel newInput  recebendo um tipo = text, usando .type=''
+
+  newInput.name = 'input'
+// variavel newInput recebendo um nome = input, usando .name=''
+
+  newLi.appendChild(newInput)
+// variavel newLi declarando como filha a variavel newInput, usando .appendChild()
+
+  ul.appendChild(newLi)
+// variavel ul declando como filha a newLi
+
+}
+
+</Script>
+
+
+  <h2>Minha Agenda</h2>
+
+
+  <button onclick="addContact()">Novo Contato</button>
+  <button onclick="removeContact()">Remover Contato</button>
+
+  <section id="contacts-list"></section>
+
+  <script>
+    function addContact() {
+  const contactSection = document.getElementById('contacts-list')
+
+// mostrou na tela Contato
+  const h3 = document.createElement('h3')
+  h3.innerText = "Contato"
+
+//criou uma ul
+  const ul = document.createElement('ul')
+
+//criou uma li
+  const nameLi = document.createElement('li')
+
+//escreveu na li e mostrou na tela Nome:
+  nameLi.innerText = "Nome: "
+
+//criou o input para esta li
+  const nameInput = document.createElement('input')
+
+//deu o tipo do input
+  nameInput.type = 'text'
+
+// deu um nome para o input
+  nameInput.name = 'fullname'
+
+//declarou o input como sendo filho da li
+  nameLi.appendChild(nameInput)
+
+// declarou a li como filha do lu
+  ul.appendChild(nameLi)
+
+//declarou o lu como filho do documento e criou um elemento quebra de linha
+  ul.appendChild(document.createElement('br'))
+
+//criou outra li para numero de telefone
+  const phoneLi = document.createElement('li')
+
+// escreveu na li e na tela telefone  
+  phoneLi.innerText = "Telefone: "
+
+//criou um input para li
+  const phoneInput = document.createElement('input')
+
+//deu o tipo do input tipo texto
+  phoneInput.type = 'text'
+
+// nomeou o input como phone  
+  phoneInput.name = 'phone'
+
+// declarou o input phoneInput como filho do PhoneLi
+  phoneLi.appendChild(phoneInput)
+
+//declarou o phoneLi como flho do ul 
+  ul.appendChild(phoneLi)
+
+//criou mais quebra de linha  
+  ul.appendChild(document.createElement('br'))
+
+
+// vai ser feito o mesmo processo para criar uma li dentro da ul com um input.
+  const addressLi = document.createElement('li')
+  addressLi.innerHTML = '<label for="address">Endereço: </label>'
+  const addressInput = document.createElement('input')
+  addressInput.type = 'text'
+  addressInput.name = 'address'
+  addressInput.id = 'address'
+  addressLi.appendChild(addressInput)
+  ul.appendChild(addressLi)
+  ul.appendChild(document.createElement('br'))
+
+  contactSection.append(h3, ul)
+}
+
+function removeContact() {
+  const contactSection = document.getElementById('contacts-list')
+
+  const titles = document.getElementsByTagName('h3')
+  const contacts = document.getElementsByTagName('ul')
+
+  contactSection.removeChild(titles[titles.length - 1])
+  contactSection.removeChild(contacts[contacts.length - 1])
+}
+  </script>
+
+  
+
+</body>
+</html>
