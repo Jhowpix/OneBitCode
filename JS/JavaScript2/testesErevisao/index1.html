@@ -10,17 +10,23 @@
   
 
   <script>
-
+    // pegando nome do turista com prompt
     let nome = prompt("Qual seu nome turista?");
+    //abrindo opcao com prompt ( sim  / nao )
     let pergunta = prompt("Visitou alguma cidade? ( sim/ nao )");
-
+    
+    // abrindo uma variavel vazia para armazenar variavel outraCidades
     let text = "";
+     
      
       if (pergunta === "nao"){
       alert("voce precisa sair mais");
      }
      
+     //estrutura while para repertir a pergunta en quanto a condicao for sim
     while ( pergunta === "sim"){
+
+      //
       let cidadesVisitadas = prompt("Qual cidade visitou")
       let visitouOutra = prompt("Visitou alguma outra cidade? (sim/nao)");
       let outrasCidades = prompt("Qual cidade?");
