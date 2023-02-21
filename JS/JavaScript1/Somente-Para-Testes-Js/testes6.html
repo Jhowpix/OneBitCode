@@ -7,18 +7,22 @@
   <title>Document</title>
 </head>
 <body>
+  
   <script>
-    
-    let indice = 0;
-     while(indice <= 100){
-      document.write( indice + '<br>')
 
-       if( indice % 10 == 0)
-      document.write('<hr>')
+    let ano = 1004;
 
-      indice +=1
-     
-     }
+    while( ano <= 2023 ){
+      ano += 4
+
+      if ( ano % 100 && ano % 400 ){
+        document.write('')
+        document.write(ano + '<br>')
+      }
+
+      
+    }
+
   </script>
 </body>
 </html>
