@@ -8,28 +8,42 @@
 </head>
 <body>
 
-  <button onclick="criar">Criar tabuada</button>
-  <button onclick="excluir">Excluir tabuada</button>
-  <div id="output"></div>
+<button onclick="soma()">+</button>
 
-  <script>
-       
+<button onclick="sub()">-</button>
 
-     function criar(){
-      let mensagem = '';
-      let i = 1;
+<button onclick="mult()">*</button>
 
-      let value = parseInt(prompt('Digite o valor da tabuada.'));
+<button onclick="divis()">/</button>
 
-      while(i <= 100){
-        mensagem += value  + 'X' + i + ' = ' + ( value*i) + '<br>';
-        i++
-        document.getElementById("output").innerHTML = mensagem ;
-      }
-      
-     }
+<p id="show"></p>
 
+<script>
+  let n = parseInt(prompt('Digite um valor'));
+  document.getElementById('show').innerHTML= n ;
+  let resul = '';
 
-  </script>
+  function soma(){
+    let n1 = parseInt(prompt('Digite um valor'));
+    result = n + n1
+     document.getElementById('show').innerHTML= result ;
+  }
+   function sub(){
+    let n2 = parseInt(prompt('Digite um valor'));
+    result -=  n2
+     document.getElementById('show').innerHTML= result;
+  }
+   function mult(){
+    let n3 = parseInt(prompt('Digite um valor'));
+    result *= n3
+     document.getElementById('show').innerHTML= result ;
+  }
+   function divis(){
+    let n4 = parseInt(prompt('Digite um valor'));
+    result /= n4
+     document.getElementById('show').innerHTML= result ;
+  }
+</script>
+
 </body>
 </html>
