@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Controle financeiro</title>
+</head>
+<body>
+<h2> Controle Financeiro</h2>
+
+<p>Escreva um programa em javascript que comece perguntando pela quantidade inicial de dinheiro disponível e então mostre na tela essa quantidade juntamente com as opções de adicionar e remover dinheiro e uma opção de sair. Ao clicar na opção de adicionar dinheiro o programa deve perguntar pela quantidade a ser adicionada, somar esse valor com a quantidade inicial e então mostrar novamente o menu com a quantidade de dinheiro e as opções. A opção de remover dinheiro deve fazer o mesmo, porém subtraindo o valor. A opção de sair deve encerrar o programa.</p>
+
+<script>
+
+   let valorInicial = parseInt(prompt('valor inicial.'));
+
+   let menu = prompt('Deseja fazer uma transacao? \n\n1. PARA DEPOSITO \n2. PARA SAQUE \n3. SAIR');
+
+   while (menu !='3'){
+
+      if (menu == '1') {
+        let valueAdd = parseInt(prompt('valor a ser depositado.'));
+        alert('valor do deposito: R$ ' + valueAdd +
+        '\n\n Valor total R$ ' + (valorInicial += valueAdd));
+      }else if(menu == '2'){
+         let valueSub = parseInt(prompt('valor a ser sacado.'));
+        alert('valor do saque: R$ ' + valueSub +
+        '\n\n Valor total R$ ' + (valorInicial -= valueSub));
+      }else{
+        alet('OPCAO INVALIDA!');
+      }
+
+      menu = prompt('Deseja fazer uma transacao? \n\n1. PARA DEPOSITO \n2. PARA SAQUE \n3. SAIR');
+   }
+
+   alert('encerrando...\n\nObrigado por usar nossos servicos.')
+
+</script>
+  
+</body>
+</html>
