@@ -1,4 +1,4 @@
-import calculate from "./calculate.js"
+import {calculate} from "./calculate.js"
 
 const main = document.querySelector("main")
 const root = document.querySelector(":root")

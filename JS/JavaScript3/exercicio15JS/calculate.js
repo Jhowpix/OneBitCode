@@ -1,4 +1,4 @@
- export default function calculate() {
+ export  function calculate() {
   const resultInput = document.querySelector('#result');
   resultInput.value = "ERROR"
   resultInput.classList.add("error")
